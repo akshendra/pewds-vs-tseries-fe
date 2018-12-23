@@ -83,7 +83,7 @@ export default {
     this.load();
     this.id = setInterval(() => {
       this.load();
-    }, 1000);
+    }, 2000);
   },
 
   beforeDestroy() {
