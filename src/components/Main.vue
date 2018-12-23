@@ -63,12 +63,10 @@ export default {
     })
       .then(res => res.json())
       .then(response => {
-        console.log(response);
         this.state = 'loaded';
         const sorted = response.channels.sort((left, right) => {
           return (new Date(right.publishedAt) - new Date(left.publishedAt));
         });
-        console.log(sorted.map(s => s.title));
         this.pewds = sorted[0]
         this.tseries = sorted[1]
         this.diff = this.pewds.statistics.subscriberCount - this.tseries.statistics.subscriberCount;
@@ -90,7 +88,6 @@ export default {
 
   beforeDestroy() {
     if (this.id) {
-      console.log('Destroying');
       clearInterval(this.id);
     }
   },
