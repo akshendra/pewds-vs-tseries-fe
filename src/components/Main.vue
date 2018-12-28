@@ -31,6 +31,10 @@
         <a target="_blank" href="https://www.youtube.com/user/PewDiePie?sub_confirmation=1">
           Do your part.
         </a>
+        <br />
+        <a href="https://github.com/akshendra">
+          Github
+        </a>
       </div>
     </div>
   </div>
@@ -102,10 +106,12 @@ export default {
 
 .diff {
   font-size: 2em;
+  background: #EFF;
 }
 
 .diff-good {
   display: flex;
+  margin: 5px 0em;
   justify-content: center;
   align-items:  center;
 }
@@ -130,6 +136,33 @@ export default {
   padding: 0.5em;
   color: white;
 }
+
+.footer {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1em;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .channels {
+    display: block;
+  }
+
+  .header {
+    padding: 0;
+    width: 100%;
+  }
+
+  .diff-good {
+    display: block;
+  }
+
+  .diff-good .left, .diff-good .right {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
 
 </style>
 

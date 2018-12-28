@@ -24,8 +24,15 @@ export default {
   color: #2c3e50;
   margin: 0;
   padding: 0;
-  width: 98vw;
-  height: 90vh;
   box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+}
+
+@media (min-width: 641px) {
+  #app {
+    width: 98vw;
+  }
 }
 </style>
