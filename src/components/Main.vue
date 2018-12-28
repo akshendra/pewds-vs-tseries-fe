@@ -15,7 +15,7 @@
             </div>
             <div class="num"> {{ diff }} </div>
             <div class="right">
-              subscriber from T-Series
+              subscribers from T-Series
             </div>
           </div>
         </div>
