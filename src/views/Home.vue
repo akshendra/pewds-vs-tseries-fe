@@ -4,9 +4,6 @@
       ...... ..... ..... ..... loading .... .... .... ....
     </div>
     <div v-else>
-      <div class="header">
-        PewDiePie v/s T-Series
-      </div>
       <div class="diff">
         <div v-if="diff >= 0">
           <div class="diff-good">
@@ -42,10 +39,10 @@
 
 <script>
 
-import Channel from './Channel';
+import Channel from '../components/Channel';
 
 export default {
-  name: 'Main',
+  name: 'Home',
   components: {
     Channel,
   },
